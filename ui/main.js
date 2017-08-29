@@ -20,7 +20,7 @@ btn.onlick = function() {
         // Not done yet
     };
     
-    counter = counter + 1;
-    var count = document.getElementById('count');
-    count.innerHTML = count.toString();
+    // Make the request
+    request.open('/GET', 'http://ashwani2879.imad.hasura-app.io/counter', true);
+    request.send(null);
 };
