@@ -21,6 +21,6 @@ btn.onlick = function() {
     };
     
     // Make the request
-    request.open('/GET', 'http://ashwani2879.imad.hasura-app.io/counter', true);
+    request.open('GET', 'http://ashwani2879.imad.hasura-app.io/counter', true);
     request.send(null);
 };
