@@ -33,6 +33,14 @@ app.get('/article-three', function (req, res) {
    res.send('Article three is requested and will be served soon'); 
 });
 
+var names = [];
+app.get('/submit-name/:name', function (req, res) {
+    // Get the name from the reuest object
+    var name = req.params.name;
+    names.push(name);
+    res.send(JSON.stringify(names)); 
+});
+
 var counter = 0;
 app.get('/counter', function (req, res) {
     counter = counter + 1;
