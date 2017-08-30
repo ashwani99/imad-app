@@ -1,8 +1,8 @@
 console.log('Loaded!');
 
 
-var btn = document.getElementById('counter');
-btn.onlick = function() {
+var button = document.getElementById('counter');
+button.onlick = function() {
     
     // Create a request object
     var request = new XMLHttpRequest();
