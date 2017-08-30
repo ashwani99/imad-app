@@ -3,6 +3,7 @@ console.log('Loaded!');
 
 var button = document.getElementById('counter');
 button.onlick = function() {
+    console.log('Clicked');
     
     // Create a request object
     var request = new XMLHttpRequest();
